@@ -1,0 +1,298 @@
+@import 'compass/css3';
+
+/* =========================================
+  	Scroll bar styles for jQuery Scroll Path
+  	      (http://joelb.me/scrollpath)
+   ========================================= */
+
+.sp-scroll-bar {
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  top: 5%;
+  width: 10px;
+  height: 90%;
+  border-radius: 5px;
+}
+
+.sp-scroll-bar:hover {
+  background: white;
+  background: rgba(255,255,255, 0.1);
+}
+
+.sp-scroll-bar .sp-scroll-handle {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  border-radius: inherit;
+  background: gray;
+  background: rgba(0,0,0,0.7);
+}
+
+.sp-scroll-bar .sp-scroll-handle:hover {
+  background: black;
+}
+
+/*------------------------------------------------*/
+
+.back-link{
+  text-decoration: none;
+  //display: block;
+  height: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 18px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 9999;
+  opacity: 0.3;
+
+  color: #000;
+  background: url("https://s3.amazonaws.com/nintriva_site/images/house.png") no-repeat center;
+  text-transform: uppercase;
+  border: 2px solid #000;
+
+  &:hover {
+    opacity: 1;
+    @include transition(all, 0.2s);
+  }
+}
+
+html, body { padding: 0; margin: 0}
+
+.visible{ visibility:visible; -ms-animation-delay: 0.2s; -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+
+.methods-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  z-index: 8;
+
+  .right {
+    float: right;
+    text-align: left;
+  }
+
+  .left {
+    float: left;
+    text-align: right;
+  }
+
+  .step {
+    height: 30px;
+    width: 200px;
+    position: relative;
+    background: white;
+
+    .dot {
+      width: 25px;
+      height: 30px;
+      background: url("https://s3.amazonaws.com/nintriva_site/images/bullet.png") white center no-repeat;
+
+    }
+    .dot-line {
+      border-bottom: 2px dashed #BBB;
+      width: 50px;
+      float: left;
+      padding-top: 15px;
+      margin: 0 5px;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+  }
+
+  .step-left {
+    left: 488px;
+  }
+
+  .step-right {
+    left: 312px
+  }
+
+  h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  h2 {
+    display: block;
+    float: right;
+    color: #000;
+    font-size: 60px;
+    font-weight: 600;
+    max-width: 400px;
+    margin-top: 50px;
+    line-height: 60px;
+  }
+
+  h3 {
+    display: block;
+    //background: red;
+    font-size: 24px;
+    color: #AAA;
+    text-transform: uppercase;
+    font-weight: 800;
+    float: left;
+    margin-left: 5px;
+
+  }
+
+  p {
+    display: block;
+    float: right;
+    color: #444;
+    font-size: 14px;
+    max-width: 400px;
+    margin-top: 10px;
+  }
+
+  .illustration{
+    width: 600px;
+    height: inherit;
+    position: absolute;
+  }
+
+  .illustration.left {
+    left: 0;
+  }
+
+  .illustration-right {
+    right:0;
+  }
+
+  .illu-one {
+    background: url("https://s3.amazonaws.com/nintriva_site/images/Process-Image-1.png") left center no-repeat;
+  }
+
+  .illu-two {
+    background: url("https://s3.amazonaws.com/nintriva_site/images/Process-Image-2.png") left center no-repeat;
+  }
+
+  .illu-three {
+    background: url("https://s3.amazonaws.com/nintriva_site/images/Process-Image-3.png") left center no-repeat;
+  }
+
+  .illu-four {
+    background: url("https://s3.amazonaws.com/nintriva_site/images/Process-Image-4.png") left center no-repeat;
+  }
+  .illu-five {
+    background: url("https://s3.amazonaws.com/nintriva_site/images/Process-Image-5.png") left center no-repeat;
+  }
+
+  .illu-six {
+    background: url("https://s3.amazonaws.com/nintriva_site/images/Process-Image-6.png") left center no-repeat;
+  }
+
+
+  h4 {
+    font-size: 20px;
+    display: block;
+    max-width: 400px;
+    display: block;
+    margin: 10px auto 30px auto;
+  }
+
+  .Links {
+    color: #d29568;
+    border: 2px solid #d29568;
+  }
+
+
+  .start, .end {
+    width: 600px;
+    text-align: center;
+    position: absolute;
+    left: 46px;
+    background: white;
+
+    .Links  {
+      margin: 0 auto;
+
+      &:hover {
+        border: 2px solid #d29568;
+        background: #d29568;
+        color: #fff;
+      }
+    }
+  }
+
+  .end {
+    top: 8550px;
+  }
+
+  .one, .two, .three, .four, .five, .six {
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    text-align: center;
+    z-index: 899;
+
+    a {
+
+      color: #efb81e;
+      font-size: 16px;
+      display: block;
+      width: 150px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border: 2px dotted #CCC;
+      padding: 5px;
+      text-transform: uppercase;
+
+    }
+
+    .links-right {
+      margin: 20px 0 0 600px;
+
+      &:hover {
+        margin: 25px 0 0 600px;
+        @include transition(all, 0.5s);
+      }
+    }
+
+    .links-left {
+      margin: 20px 0 0 235px;
+
+      &:hover {
+        margin: 25px 0 0 235px;
+        @include transition(all, 0.5s);
+      }
+    }
+  }
+
+  .one {
+    top: 1200px;
+    left: -150px;
+  }
+
+  .two {
+    top: 2400px;
+    left: -150px;
+  }
+  .three {
+    top: 3600px;
+    left: -150px;
+  }
+  .four {
+    top: 4800px;
+    left: -150px;
+  }
+  .five {
+    top: 6000px;
+    left: -150px;
+  }
+  .six {
+    top: 7200px;
+    left: -150px;
+  }
+
+}
